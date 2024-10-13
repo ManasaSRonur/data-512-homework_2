@@ -27,7 +27,7 @@ Snippets of the code were taken from a code example developed by **Dr. David W. 
 
 1. Wikimedia REST API:
     - [MediaWiki Action API](https://en.wikipedia.org/w/api.php)
-    - [ORES API](https://www.mediawiki.org/wiki/ORES): 
+    - [ORES API](https://www.mediawiki.org/wiki/ORES)
 
 3. **Python packages/libraries**: 
     - [Requests](https://docs.python-requests.org/en/latest/)
@@ -120,15 +120,15 @@ Step 4: Analysis
 
 The analysis includes generating the below tabular insights from the output files generated.
 
-- Top 10 countries by coverage: The 10 countries with the highest total articles per capita (in descending order) .
-- Bottom 10 countries by coverage: The 10 countries with the lowest total articles per capita (in ascending order) .
-- Top 10 countries by high quality: The 10 countries with the highest high quality articles per capita (in descending order) .
+- Top 10 countries by coverage: The 10 countries with the highest total articles per capita (in descending order).
+- Bottom 10 countries by coverage: The 10 countries with the lowest total articles per capita (in ascending order).
+- Top 10 countries by high quality: The 10 countries with the highest high quality articles per capita (in descending order).
 - Bottom 10 countries by high quality: The 10 countries with the lowest high quality articles per capita (in ascending order).
 - Geographic regions by total coverage: A rank ordered list of geographic regions (in descending order) by total articles per capita.
 - Geographic regions by high quality coverage: Rank ordered list of geographic regions (in descending order) by high quality articles per capita.
 
 
-### Research Implications
+### Research Implications.
 
 
 
