@@ -121,8 +121,29 @@ The analysis includes generating the below tabular insights from the output file
 
 ### Research Implications.
 
-Surprisingly, there is no much overlap between the top 10 countries by coverage and top 10 countries by quality. So more articles doesnt mean high quality articles.
 
+#### Key Findings/Reflection
+This analysis of Wikipedia's coverage of politicians reveals interesting patterns in both representation and article quality across different countries. I was surprised by the gap between countries with the most and least articles per person. Smaller countries like Monaco and Tuvalu have a lot of articles compared to their small populations, while larger nations like China and India have far fewer. This might suggest that smaller countries receive more attention because it’s easier to cover fewer politicians. As expected, countries with strict media control or limited internet access, like China and India, tend to be underrepresented on Wikipedia, showing how government restrictions can influence online visibility. Additionally, the top countries by article count don’t always match those with the highest-quality articles, proving that more coverage doesn’t always mean better content.
+
+I learnt that Smaller Western or Western-influenced countries tend to receive more coverage, while larger, more populous nations, especially in Asia, are underrepresented. This could be due to several factors, such as Wikipedia's preference for countries with higher English proficiency, better internet access, and more digital literacy. Countries with more open political systems might also have more publicly available information about their politicians. Cultural factors may play a role too, as some cultures place more emphasis on individual political figures, leading to more detailed and extensive articles.
+
+#### What biases did you expect to find in the data (before you started working with it), and why?
+I thought there would be biases related to political issues and government control over information. Countries with strict media rules would likely have fewer articles or lower quality information since certain topics might be restricted or not well covered. Similarly countries limited access to internet devices or the developing countries would likely to have fewer or lower quality artciles.
+
+#### What (potential) sources of bias did you discover in the course of your data processing and analysis?
+I found major differences based on population size and articles. For example, large countries like China and India had fewer articles per person, likely due to limits on free speech and access to information. On the other hand, smaller countries might have more articles compared to their size, which could give a false impression of their political importance.
+
+#### What might your results suggest about (English) Wikipedia as a data source?
+The findings indicate that Wikipedia's content is strongly influenced by the official languages of the countries it represents, along with other factors such as population size and media freedom. The analysis reveals that countries with the least article coverage and the lowest quality articles are those where English is not an official language and where there are very few English speakers.
+In countries where English is not an official language, the English version of Wikipedia may have limited information, leading to an unbalanced view of their political situations. This bias could lead to a skewed representation of global political landscapes if Wikipedia is used as a primary data source. Also, this highlights the importance of recognizing how language diversity and access affect content creation, and the difficulties non-English-speaking countries face in having their political stories accurately represented on platforms like Wikipedia.
+
+#### Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data? 
+A realistic example of biased results could occur if a global politics analysis model is trained on this Wikipedia data. It might overemphasize politicians from smaller Western countries while underrepresenting those from larger non-Western nations. Similarly the model will overestimate the influence of politicians from the english speaking countries while undermining the influence of prominent figures from the non english speaking countries. This could lead to a skewed understanding of global politics and inaccurate analysis of political influence or international relations. 
+
+#### Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might still be appropriate and useful, despite its inherent limitations and biases?
+Even though Wikipedia data on political figures has some limitations and biases, it can still be useful in certain research scenarios. One example is studying how online political engagement relates to digital democracy in small to medium-sized countries. The research could explore whether countries with better Wikipedia coverage of their politicians have higher citizen participation in digital democracy efforts, such as online voting or public consultations. While the results might not apply to larger countries or those with limited Wikipedia presence, this research could help us understand the role of online platforms in boosting democratic engagement and guide efforts to improve digital political participation in small nations.
+
+In summary, this analysis reminds us that using digital/social platforms for information is complicated. It highlights the need to carefully examine the data, assess the quality for bias and be aware of its limitations.
 
 
 
