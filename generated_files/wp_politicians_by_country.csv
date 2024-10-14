@@ -1,4 +1,4 @@
-country,Region,Population,title_x,revision_id,quality_prediction
+country,Region,Population,title,revision_id,quality_prediction
 Afghanistan,SOUTH ASIA,42.4,Majah Ha Adrif,1233202991.0,Start
 Afghanistan,SOUTH ASIA,42.4,Haroon al-Afghani,1230459615.0,B
 Afghanistan,SOUTH ASIA,42.4,Tayyab Agha,1225661708.0,Start
