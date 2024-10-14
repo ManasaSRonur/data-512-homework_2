@@ -50,7 +50,7 @@ Note, when you create a Personal API token you are granted the three items - a C
 
 #### Input Data Files:
     
-1. [politicians_by_country.AUG.2024.csv]()
+1. [politicians_by_country.AUG.2024.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/inputfiles/politicians_by_country_AUG.2024.csv)
 
     This csv file contains a list of Wikipedia article pages about politicians from a wide range of countries with below fields:
 
@@ -58,7 +58,7 @@ Note, when you create a Personal API token you are granted the three items - a C
     - **url**: string - Wikipedia page URL.
     - **country**: string - country of the politician.
 
-2. [population_by_country_AUG.2024.csv]()
+2. [population_by_country_AUG.2024.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/inputfiles/population_by_country_AUG.2024.csv)
 
     This csv file contains population data represented in millions.
 
@@ -66,32 +66,23 @@ Note, when you create a Personal API token you are granted the three items - a C
     - **Population**: decimal - Number representing population in millions.
 
 #### Intermediary Data Files:
-1. [articles_page_info.csv]() - File containing page info of the artciles extracted through MediaWiki Action API. It has below fields:
-- **pageid** - 
-- **ns** - 
-- **title**
-- **contentmodel**
-- **pagelanguage**
-- **pagelanguagehtmlcode**
-- **pagelanguagedir**
-- **touched**
-- **lastrevid**
-- **length**
-- **talkid**
-- **fullurl**
-- **editurl**
-- **canonicalurl**
-- **watchers**
-- **missing**
-- **redirect**
-- **new**
+1. [articles_page_info.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/intermediary_files/articles_page_info.csv) - File containing page info of the artciles extracted through MediaWiki Action API. It has below fields:
+- **pageid**: integer - Wikipedia page id
+- **title**: string - Wikipedia article title
+- **lastrevid**: integer - Last revision id of the article
 
-2. [articles_ores_scores.csv]() -  File containing article quality predictions from ORES API for each of the articles using revision_id from page info.
+
+2. [articles_ores_scores.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/intermediary_files/articles_ores_scores.csv) -  File containing article quality predictions from ORES API for each of the articles using revision_id from page info. It has below fields:
+- **pageid**: integer - Wikipedia page id
+- **title**: string - Wikipedia article title
+- **revision_id**: integer - Last revision id of the article
+- **quality_prediction**: string - Predicted quality of the article
+
 
 
 #### Output Data Files:
 
-1. [wp_politicians_by_country.csv]() - A csv file containing following columns of data.
+1. [wp_politicians_by_country.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/generated_files/wp_politicians_by_country.csv) - A csv file containing following columns of data.
 - **country**
 - **region**
 - **population**
@@ -99,7 +90,7 @@ Note, when you create a Personal API token you are granted the three items - a C
 - **revision_id**
 - **article_quality**
 
-2. [wp_countries-no_match.txt]()  - A text file with all the countries for which there are no matches between the the population dataset and Wikipedia data.
+2. [wp_countries-no_match.txt](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/generated_files/wp_countries-no_match.txt)  - A text file with all the countries for which there are no matches between the the population dataset and Wikipedia data.
 
 ### Data Processing workflow
 
@@ -114,7 +105,7 @@ If for any reason, ORES requests fails for an article or if the last revision id
 
 Step 3: Output file generation
 
-After retrieving and including the ORES data for each article, the Wikipedia data and population data are merged together and resulting data is stored in the csv file in the format as described earlier. The countries that were not matched during the merge are recorded and stored as text file.
+After retrieving and including the ORES data for each article, the Wikipedia page info data and ores data are merged together, so all articles without last revision id are retained with blank values for score. This dataset is merged together with population data and resulting data is stored in the csv file in the format as described earlier. The countries that were not matched during the final merge are recorded and stored as text file.
 
 Step 4: Analysis
 
@@ -129,6 +120,9 @@ The analysis includes generating the below tabular insights from the output file
 
 
 ### Research Implications.
+
+Surprisingly, there is no much overlap between the top 10 countries by coverage and top 10 countries by quality. So more articles doesnt mean high quality articles.
+
 
 
 
