@@ -132,7 +132,7 @@ The analysis includes generating the below tabular insights from the output file
 #### Key Findings/Reflection
 This analysis of Wikipedia's coverage of politicians reveals interesting patterns in both representation and article quality across different countries. I was surprised by the gap between countries with the most and least articles per person. Smaller countries like Monaco and Tuvalu have a lot of articles compared to their small populations, while larger nations like China and India have far fewer. As expected, countries with strict media control or limited access, like China, tend to be underrepresented on Wikipedia, showing how government restrictions can influence online visibility. Additionally, the top countries by article count don’t match those with the highest-quality articles, proving that more coverage doesn’t always mean better content.
 
-I learned that smaller Western or Western-influenced countries tend to receive more coverage, while larger, more populous nations, especially in Asia, are underrepresented. This could be due to several factors, such as Wikipedia's preference for countries with higher English proficiency, better internet access, and more digital literacy. Countries with more open political systems might also have more publicly available information about their politicians.
+I learned that smaller Western or Western-influenced countries tend to receive more coverage, while larger, more populous nations, especially in Asia, are underrepresented. This could be due to several factors, such as Wikipedia's preference for countries with higher English proficiency, better internet access, and more digital literacy.
 
 #### What biases did you expect to find in the data (before you started working with it), and why?
 I thought there would be biases related to political issues and government control over information. Countries with strict media rules would likely have fewer articles or fewer high quality articles, since certain topics might be restricted or not well covered. Similarly, countries with limited access to internet devices or developing countries would likely have fewer or lower quality articles.
@@ -153,13 +153,13 @@ In summary, this analysis reminds us that using digital/social platforms for inf
 
 ### Limitations/Considerations.
 
-There are entries in the article list, that seem to be not politicians, such as Julius Lippert (historian), Robert Rey (plastic surgeon), Kostadin Kostadinov (professor), and many more. Upon investigation of a few examples, I found that though their primary field of work is not politics, they were associated with politics at some point in their lives, making political impact. Upon the assumption that this is true for the rest of such titles, they are retained for analysis.
+- There are entries in the article list, that seem to be not politicians, such as Julius Lippert (historian), Robert Rey (plastic surgeon), Kostadin Kostadinov (professor), and many more. Upon investigation of a few examples, I found that though their primary field of work is not politics, they were associated with politics at some point in their lives, making political impact. Upon the assumption that this is true for the rest of such titles, they are retained for analysis.
 
-The ores scores API, randomly failed to process data for a few articles, mostly due to a timeout error. In my first run, I had 7 failures; during the second run, I just had one failure different from the previous failures, making this data source not very reliable.
+- The ores scores API, randomly failed to process data for a few articles, mostly due to a timeout error. In my first run, I had 7 failures; during the second run, I just had one failure different from the previous failures, making this data source not very reliable.
 
-There are few articles with missing last revision, leading to a to a missing ores score. If these articles are for countries with extremely small populations, these numbers can make a difference in the final analysis, potentially changing the ranks of those countries.
+- There are few articles with missing last revision, leading to a to a missing ores score. If these articles are for countries with extremely small populations, these numbers can make a difference in the final analysis, potentially changing the ranks of those countries.
 
-There are countries like "Monaco" and "Tuvalu" with the population value in million as 0. Technically,  the population is not 0, its less than a million, probably in a few thousands. So I am dropping these values for analysis, as we do not have an exact population value to calculate the per capita value.
+- There are countries like "Monaco" and "Tuvalu" with the population value in million as 0. Technically,  the population is not 0, its less than a million, probably in a few thousands. So I am dropping these values for analysis, as we do not have an exact population value to calculate the per capita value.
 
 
 
