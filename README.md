@@ -26,14 +26,14 @@ Snippets of the code were taken from a code example developed by **Dr. David W. 
 ### API Documentation/References
 
 1. Wikimedia REST API:
-- [MediaWiki Action API](https://en.wikipedia.org/w/api.php)
-- [ORES API](https://www.mediawiki.org/wiki/ORES)
+    - [MediaWiki Action API](https://en.wikipedia.org/w/api.php)
+    - [ORES API](https://www.mediawiki.org/wiki/ORES)
 
 3. **Python packages/libraries**:
-- [Requests](https://docs.python-requests.org/en/latest/)
-- [pandas](https://pandas.pydata.org/docs/reference/index.html)
-- [urllib.parse module](https://docs.python.org/3/library/urllib.parse.html#module-urllib.parse)
-- [csv module](https://docs.python.org/3/library/csv.html)
+    - [Requests](https://docs.python-requests.org/en/latest/)
+    - [pandas](https://pandas.pydata.org/docs/reference/index.html)
+    - [urllib.parse module](https://docs.python.org/3/library/urllib.parse.html#module-urllib.parse)
+    - [csv module](https://docs.python.org/3/library/csv.html)
 
 #### Access Token
 
