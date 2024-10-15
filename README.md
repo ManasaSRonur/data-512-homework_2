@@ -50,45 +50,52 @@ Note, when you create a Personal API token you are granted the three items - a C
 
 #### Input Data Files:
 
+These files are under the folder [inputfiles](https://github.com/ManasaSRonur/data-512-homework_2/tree/main/inputfiles)
+
 1. [politicians_by_country.AUG.2024.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/inputfiles/politicians_by_country_AUG.2024.csv)
 
-This csv file contains a list of Wikipedia article pages about politicians from a wide range of countries with below fields:
+    This csv file contains a list of Wikipedia article pages about politicians from a wide range of countries with below fields:
 
--**name**: string - Name of the wikipedia article.
--**url**: string - Wikipedia page URL.
--**country**: string - country of the politician.
+    - **name**: string - Name of the wikipedia article.
+    - **url**: string - Wikipedia page URL.
+    - **country**: string - country of the politician.
 
 2. [population_by_country_AUG.2024.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/inputfiles/population_by_country_AUG.2024.csv)
 
-This csv file contains population data represented in millions.
+    This csv file contains population data represented in millions.
 
--**Geography**: string - Representing geography such as region (distinguished by all caps) and country.
--**Population**: decimal - Number representing population in millions.
+    - **Geography**: string - Representing geography such as region (distinguished by all caps) and country.
+    - **Population**: decimal - Number representing population in millions.
 
 #### Intermediary Data Files:
+
+These files are under the folder [intermediary_files](https://github.com/ManasaSRonur/data-512-homework_2/tree/main/intermediary_files)
+
 1. [articles_page_info.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/intermediary_files/articles_page_info.csv) - File containing page info of the articles extracted through MediaWiki Action API. It has below fields:
--**pageid**: integer - Wikipedia page id
--**title**: string - Wikipedia article title
--**lastrevid**: integer - Last revision id of the article
+    - **pageid**: integer - Wikipedia page id
+    - **title**: string - Wikipedia article title
+    - **lastrevid**: integer - Last revision id of the article
 
 
 2. [articles_ores_scores.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/intermediary_files/articles_ores_scores.csv) - File containing article quality predictions from ORES API for each of the articles using revision_id from page info. It has below fields:
--**pageid**: integer - Wikipedia page id
--**title**: string - Wikipedia article title
--**revision_id**: integer - Last revision id of the article
--**quality_prediction**: string - Predicted quality of the article
+    - **pageid**: integer - Wikipedia page id
+    - **title**: string - Wikipedia article title
+    - **revision_id**: integer - Last revision id of the article
+    - **quality_prediction**: string - Predicted quality of the article
 
 
 
 #### Output Data Files:
 
+The below output files are under the folder [generated_files](https://github.com/ManasaSRonur/data-512-homework_2/tree/main/generated_files)
+
 1. [wp_politicians_by_country.csv](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/generated_files/wp_politicians_by_country.csv) - A csv file containing the following columns of data.
--**country**
--**region**
--**population**
--**article_title**
--**revision_id**
--**article_quality**
+    - **country**: string -  Country Name
+    - **region**: string -  country Region
+    - **population**: decimal - Population of the country in millions
+    - **article_title**: string - Wikipedia article title
+    - **revision_id**: integer -  Article last revision id
+    - **article_quality** string -  ORES quality score of the Article
 
 2. [wp_countries-no_match.txt](https://github.com/ManasaSRonur/data-512-homework_2/blob/main/generated_files/wp_countries-no_match.txt) - A text file with all the countries for which there are no matches between the population dataset and Wikipedia data.
 
