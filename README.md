@@ -1,5 +1,4 @@
-# Homework 2: Considering Bias in Data
-## DATA 512 Human Centered Data Science
+# Considering Bias in Data using Wikipedia Articles
 ## Project Goal
 The goal of this assignment is to explore the concept of bias in data using Wikipedia articles. We will consider articles on political figures from different countries. The idea is to combine a dataset of Wikipedia articles with a dataset of country populations and use a machine learning service called ORES to estimate the quality of each article. And then perform an analysis of how the coverage of politicians on Wikipedia and the quality of articles about politicians vary among countries. Our analysis will primarily include three aspects, as mentioned below:
 
